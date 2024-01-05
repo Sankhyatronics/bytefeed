@@ -1,3 +1,5 @@
+![Learning Header](/images/LearningHeader.png)
+
 # Understanding Liner Regression Algorithms in Machine Learning
 
 ## Introduction:
