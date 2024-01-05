@@ -1,20 +1,20 @@
 # Understanding Liner Regression Algorithms in Machine Learning
 
-**Introduction:**
+## Introduction:
 
 Machine learning empowers computers to discern patterns and make predictions based on data. An integral facet of machine learning is regression analysis, a set of techniques employed for forecasting a continuous outcome variable using one or more predictor variables.
 
-**What is Regression?**
+## What is Regression?
 
 Regression is a form of "Supervised Machine Learning." It is a statistical method that seeks to establish a relationship between a 'target' and one or more independent variables (features or predictors). The objective is to construct a model capable of accurately predicting the target variable based on the given features. The output of a regression model is a continuous value, rendering it suitable for tasks such as predicting prices, sales, or any other numerical quantity.
 
-**Liner Regression Algorithms**
+## Liner Regression Algorithms
 
 Linear regression stands out as one of the simplest and most widely utilized regression algorithms. It presupposes a linear relationship between the independent and dependent variables. The model articulates this relationship with a straight line, where coefficients determine the slope and intercept.
 
-Understanding the Linear Regression Algorithm with Sample Data:
+### Understanding the Linear Regression Algorithm with Sample Data:
 
-1. Select the training data which we want to use for Liner Regression. Split the data in two sets. The first dataset is used to train the algorithm, while the second set serves for validation on the trained model.
+#### Step 1. Select the training data which we want to use for Liner Regression. Split the data in two sets. The first dataset is used to train the algorithm, while the second set serves for validation on the trained model.
 
 Sample Coffee Sale Data with Temperature:
 
@@ -68,13 +68,13 @@ Validation Dataset
 | 30 | 40 |
 | 33 | 35 |
 
-1. We will create Excel chart with trendline to derive the regression equation (model). In the chart you can see that we have liner regression equation which is
+#### Step 2. We will create Excel chart with trendline to derive the regression equation (model). In the chart you can see that we have liner regression equation which is
 
 Y (Coffee sale) = -1.8503 x (Temperature) + 95.708
 
-![](RackMultipart20240105-1-awqail_html_713ba6faebce41b3.gif)
+![Chart](/images/LinerRegressionAlgorithms/LinerRegressionChart1.png)
 
-1. Use the validation dataset to test the model by predicting values based on the derived formula.
+#### Step 3. Use the validation dataset to test the model by predicting values based on the derived formula.
 
 Y (Coffee sale) = -1.8503 x (Temperature) + 95.708
 
@@ -86,25 +86,24 @@ Y (Coffee sale) = -1.8503 x (Temperature) + 95.708
 | 30 | 40 | 40 |
 | 33 | 35 | 35 |
 
-1. Compare the known actual values against predicted values, calculating error and accuracy.
+#### Step 4. Compare the known actual values against predicted values, calculating error and accuracy.
 
 | **Temp °C** | **Coffee Sale (Actual)** | **Coffee Sale (Predicated)** | **Absolute Error** | **Squared Error** |
 | --- | --- | --- | --- | --- |
 | 22 | 55 | 55 | 0 | 0 |
-| --- | --- | --- | --- | --- |
 | 26 | 45 | 48 | 3 | 9 |
-| --- | --- | --- | --- | --- |
 | 27 | 48 | 46 | 2 | 4 |
-| --- | --- | --- | --- | --- |
 | 30 | 40 | 40 | 0 | 0 |
-| --- | --- | --- | --- | --- |
 | 33 | 35 | 35 | 0 | 0 |
-| --- | --- | --- | --- | --- |
-| Mean Absolute Error (MSE) | 1 |
-| --- | --- |
-| Mean squared error (MSE) | 2.6 |
-| Root mean squared error (RMSE) | 1.61245 |
-| Coefficient of determination (R2) | 0.946058 |
+
+**Mean Absolute Error (MSE) =  1**
+
+**Mean squared error (MSE) = 2.6**
+
+**Root mean squared error (RMSE) = 1.61245**
+
+**Coefficient of determination (R2) = 0.946058**
+
 
 The Mean Absolute Error (MAE), Mean Squared Error (MSE), and Root Mean Squared Error (RMSE) are metrics used to evaluate the performance of a regression model. Here's what each of these metrics indicates:
 
@@ -138,7 +137,7 @@ R² is considered as Measure of Goodness of Fit. R² provides a measure of how w
 
 A higher R² value indicates a better fit, suggesting that a larger proportion of the variance in the dependent variable is explained by the independent variables.
 
-**Conclusion:**
+## Conclusion:
 
 The low MAE (1) suggests that, on average, your model's predictions are relatively close to the actual values.
 
